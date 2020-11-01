@@ -20,3 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// page de contact 
+Route::get('contact', 'ContactController@index')->name('contact'); 
