@@ -23,3 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // page de contact 
 Route::get('contact', 'ContactController@index')->name('contact'); 
+
+// test 
+Route::get('/test/login', 'Auth\LoginController@newLogin'); 

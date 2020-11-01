@@ -37,4 +37,9 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function newLogin()
+    {
+        return view('auth.login2'); 
+    }
 }

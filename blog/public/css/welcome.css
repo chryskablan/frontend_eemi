@@ -11,12 +11,14 @@
     --color2 : #fce21b; 
     --color3 : #555; 
 }
-
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff; 
+    background-color: #fff;
 }
+/* #app {
+    height: 100vh;
+} */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--family-title);
     font-weight: 700;
@@ -43,6 +45,20 @@ li {
     border-radius: 15px;
 }
 /* nav bar home */ 
+
+.smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .scrolled-down{
+     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+     transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
 .navbar-blm {
     background-color: var(--color1);
     padding: 10px;
@@ -320,4 +336,5 @@ li {
     height: auto;
     background-color:var(--color1);
     color: white;
+    bottom: 0;
 }

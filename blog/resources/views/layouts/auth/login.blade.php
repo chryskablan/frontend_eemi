@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Connexion - BLM</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -16,48 +16,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/login.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-     <!-- nav bar -->
-     <nav class="nav smart-scroll navbar-expand-lg justify-content-center navbar-blm">
-        <a class="navbar-brand" href="#">
-            <img src="{{ asset('assets/img/logo-wot-white.png') }}" alt="">
-        </a>
-        <ul class="nav nav-pills flex-column flex-sm-row justify-content-center align-items-center" id="main_nav">
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/') }}">Accueil</a>
-            </li>
-            @if(Auth::check())
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('home') }}">Profil</a>
-                </li>
-            @endif
-            @guest
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">Se connecter</a>
-                </li>
-                @if (Route::has('register'))
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}">S'inscrire</a>
-                    </li>
-                @endif
-            @else
-                <li class="nav-item ">
-                    <a class="nav-link" href="{{ route('logout') }}"
-                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        Deconnexion
-                    </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
-                </li>
-            @endguest
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('contact') }}">Contact</a>
-            </li>
-        </ul>
-    </nav>
     <div id="app">
         <main class="py-4">
             @yield('content')
@@ -120,7 +84,8 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script>
+    <script src="{{ asset('js/login.js') }}"></script>
+    {{-- <script>
         $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 
         // detect scroll top or down
@@ -137,7 +102,7 @@
                 last_scroll_top = scroll_top;
             });
         }
-    </script>
+    </script> --}}
     @yield('scripts')
 </body>
 
