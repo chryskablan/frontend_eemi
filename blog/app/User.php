@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'firstname', 'lastname', 'email', 'phone_number', 'birth', 'address', 'city', 'country', 'cp', 'profil', 'password',
     ];
 
     /**
@@ -36,4 +36,25 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * CONSTANTES PROFIL 
+     */
+    const PROFIL_USER = 'user'; 
+    const PROFIL_ADMIN = 'admin';
+    const PROFIL_CONTRIBUTEUR = 'contributeur'; 
+
+    const PROFILS = [
+        self::PROFIL_USER => 'Utilisateur par défaut',
+        self::PROFIL_ADMIN => 'Administrateur',
+        self::PROFIL_CONTRIBUTEUR => 'Contributeur'
+    ]; 
+
+    /**
+     * Méthodes 
+     */
+    public function isProfil(string $profil)
+    {
+        return $this->profil == $profil; 
+    }
 }

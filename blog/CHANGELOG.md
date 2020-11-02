@@ -5,3 +5,6 @@
 # Updated 01-11-2020 
     - Changement de la page d'accueil 
     - view login 
+
+# Updated 03-11-2020
+    - Changement de la vue register 
