@@ -8,3 +8,4 @@
 
 # Updated 03-11-2020
     - Changement de la vue register 
+    - Systeme d'inscription et de connexion mis en place 
