@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Services\Email; 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -57,4 +58,20 @@ class User extends Authenticatable
     {
         return $this->profil == $profil; 
     }
+
+    /**
+     * Envoi du mail de validation à l'utilisateur
+     *
+     * @return void
+     */
+    public function sendMailValidation()
+    {
+        if (is_null($this->email_verified_at) || $this->email_verified_at == '') {
+            Email::send($this->email,
+                'Confirmation de votre profil BLM',
+                'mails.user.validation',
+                ['user' => $this]);
+        }
+    }
+
 }

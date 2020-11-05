@@ -12,14 +12,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// route de validation email 
+Route::get('/validate-email/{user_id}/{token}', 'UserController@emailValidate')->name('user.validate');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index')->name('welcome'); 
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware(['auth'])->prefix('/home')->group(function(){
+    Route::get('/', 'HomeController@index')->name('home'); 
+});
+Route::get('/send-mail-validation-user/{user_id}', 'UserController@sendMailValidation')->name('user.send.validation');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 // page de contact 
 Route::get('contact', 'ContactController@index')->name('contact'); 

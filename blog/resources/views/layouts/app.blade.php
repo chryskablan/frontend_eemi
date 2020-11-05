@@ -60,6 +60,34 @@
     </nav>
     <div id="app">
         <main class="py-4">
+            @if(Auth::check() && !Auth::user()->hasVerifiedEmail())
+                <div class="container">
+                    <div class="alert alert-danger">
+                        Veuillez valider votre adresse mail.
+                        <a href="{{ route('user.send.validation', ['user_id' => Auth::user()->id]) }}">ici.</a>
+                    </div>
+                </div>
+            @endif
+
+            @if ($errors->any())
+                <div class="container">
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            @endif
+
+            @if (session()->has('success'))
+                <div class="container">
+                    <div class="alert alert-success">
+                        {{ session()->get('success') }}
+                    </div>
+                </div>
+            @endif
             @yield('content')
         </main>
    </div>
