@@ -10,4 +10,12 @@ class WelcomeController extends Controller
     {
         return view('welcome'); 
     }
+
+    /**
+     * Plan du site 
+     */
+    public function planSite()
+    {
+        return view('plan-site'); 
+    }
 }

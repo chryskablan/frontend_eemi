@@ -29,5 +29,8 @@ Route::get('/send-mail-validation-user/{user_id}', 'UserController@sendMailValid
 Route::get('contact', 'ContactController@index')->name('contact'); 
 Route::post('contact', 'ContactController@store')->name('sendContact'); 
 
+//page plan du site 
+Route::get('plan-site', 'WelcomeController@planSite')->name('plan-site'); 
+
 // test 
 Route::get('/test/login', 'Auth\LoginController@newLogin'); 
