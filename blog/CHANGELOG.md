@@ -9,3 +9,6 @@
 # Updated 03-11-2020
     - Changement de la vue register 
     - Systeme d'inscription et de connexion mis en place 
+
+# Added 05-11-2020
+    - Finalisation de la page contact

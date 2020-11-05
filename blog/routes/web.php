@@ -27,6 +27,7 @@ Route::get('/send-mail-validation-user/{user_id}', 'UserController@sendMailValid
 
 // page de contact 
 Route::get('contact', 'ContactController@index')->name('contact'); 
+Route::post('contact', 'ContactController@store')->name('sendContact'); 
 
 // test 
 Route::get('/test/login', 'Auth\LoginController@newLogin'); 
