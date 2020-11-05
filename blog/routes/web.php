@@ -32,5 +32,8 @@ Route::post('contact', 'ContactController@store')->name('sendContact');
 //page plan du site 
 Route::get('plan-site', 'WelcomeController@planSite')->name('plan-site'); 
 
+// mentions légales 
+Route::get('mentions-legales', 'WelcomeController@mentions')->name('mentions'); 
+
 // test 
 Route::get('/test/login', 'Auth\LoginController@newLogin'); 

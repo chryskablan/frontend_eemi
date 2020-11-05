@@ -18,4 +18,12 @@ class WelcomeController extends Controller
     {
         return view('plan-site'); 
     }
+
+    /**
+     * Mentions légale 
+     */
+    public function mentions()
+    {
+        return view('mentions'); 
+    }
 }

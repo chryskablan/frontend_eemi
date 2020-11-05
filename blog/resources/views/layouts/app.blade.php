@@ -99,7 +99,7 @@
                 </a>
                <div class="d-flex flex-column">
                     <a href="{{ route('plan-site') }}"><small>Plan du site</small></a>
-                    <a href="#"><small>Mentions légales</small></a>
+                    <a href="{{ route('mentions') }}"><small>Mentions légales</small></a>
                     <small>Créé par <a href="#">WEB OF TODAY</a></small>
                     <small class="d-block mb-3 text-muted">© 2020-2022</small>
                </div>
