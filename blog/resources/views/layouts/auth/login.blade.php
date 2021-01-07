@@ -57,55 +57,43 @@
    </div>
    <footer class="footer container-fluid py-5 ">
        <div class="row">
-           <div class="col-12 col-md">
+            <div class="col-12 col-md">
                 <a class="navbar-brand" href="#">
                     <img src="{{ asset('assets/img/logo-wot-white.png') }}" alt="">
                 </a>
-               <div class="d-flex flex-column">
+                <div class="d-flex flex-column">
                     <a href="#"><small>Plan du site</small></a>
                     <a href="#"><small>Mentions légales</small></a>
                     <small>Créé par <a href="#">WEB OF TODAY</a></small>
                     <small class="d-block mb-3 text-muted">© 2020-2022</small>
-               </div>
+                </div>
            </div>
-           <div class="col-6 col-md">
-               <h5>ressources</h5>
-               <ul class="list-unstyled text-small">
-                   <li><a class="text-muted" href="#">Cool stuff</a></li>
-                   <li><a class="text-muted" href="#">Random feature</a></li>
-                   <li><a class="text-muted" href="#">Team feature</a></li>
-                   <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                   <li><a class="text-muted" href="#">Another one</a></li>
-                   <li><a class="text-muted" href="#">Last time</a></li>
-               </ul>
-           </div>
-           <div class="col-6 col-md">
-               <h5>features</h5>
-               <ul class="list-unstyled text-small">
-                   <li><a class="text-muted" href="#">Resource</a></li>
-                   <li><a class="text-muted" href="#">Resource name</a></li>
-                   <li><a class="text-muted" href="#">Another resource</a></li>
-                   <li><a class="text-muted" href="#">Final resource</a></li>
-               </ul>
-           </div>
-           <div class="col-6 col-md">
-               <h5>Menu</h5>
-               <ul class="list-unstyled text-small">
-                   <li><a class="text-muted" href="#">Business</a></li>
-                   <li><a class="text-muted" href="#">Education</a></li>
-                   <li><a class="text-muted" href="#">Government</a></li>
-                   <li><a class="text-muted" href="#">Gaming</a></li>
-               </ul>
-           </div>
-           <div class="col-6 col-md">
-               <h5>about</h5>
-               <ul class="list-unstyled text-small">
-                   <li><a class="text-muted" href="#">Team</a></li>
-                   <li><a class="text-muted" href="#">Locations</a></li>
-                   <li><a class="text-muted" href="#">Privacy</a></li>
-                   <li><a class="text-muted" href="#">Terms</a></li>
-               </ul>
-           </div>
+            <div class="col-6 col-md">
+                <h5>Menu</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="{{ route('welcome') }}">Accueil</a></li>
+                    <li><a class="text-muted" href="{{ route('login') }}">Se connecter</a></li>
+                    <li><a class="text-muted" href="{{ route('register') }}">S'inscrire</a></li>
+                    <li><a class="text-muted" href="{{ route('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>A propos</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">L'équipe</a></li>
+                    <li><a class="text-muted" href="#">Localisation</a></li>
+                    <li><a class="text-muted" href="#">Politique de cookie</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Réseau sociaux</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Facebook</a></li>
+                    <li><a class="text-muted" href="#">Instagram</a></li>
+                    <li><a class="text-muted" href="#">Linkedin</a></li>
+                    <li><a class="text-muted" href="#">Twitter</a></li>
+                </ul>
+            </div>
        </div>
    </footer>
 
