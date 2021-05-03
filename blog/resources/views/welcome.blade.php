@@ -14,7 +14,7 @@
         <h2 class="blm-title">Prenez les devants</h2>
         <div class="line"></div>
     </div>
-    <div class="container-fluid d-flex justify-content-between align-items-center mt-5">
+    <div class="container-fluid container-1 d-flex justify-content-between align-items-center mt-5">
         <div class="section1-bloc1">
             <video controls class="section1-video" muted>
                 <source src="{{ asset('assets/videos/black-lives-matter-protests-around-the-world.mp4') }}" type="video/mp4">

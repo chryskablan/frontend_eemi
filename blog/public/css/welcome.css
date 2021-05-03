@@ -321,3 +321,31 @@ li {
     background-color:var(--color1);
     color: white;
 }
+
+/** responsive */ 
+@media only screen and (max-width: 1025px){
+    .container-1 {
+        flex-direction: column !important;
+    }
+    .section1-bloc2 {
+        width: 100%;
+        margin-top: 30px;
+        order: 1;
+    }
+    .section1-bloc1 {
+        order: 2;
+    }
+
+    .bg-text {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 426px){
+    .section1-bloc1{
+        width: 100%;
+    }
+
+    .bg-text{
+        padding-top: 200px;
+    }
+}
