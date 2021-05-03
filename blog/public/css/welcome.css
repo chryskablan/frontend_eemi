@@ -67,6 +67,23 @@ li {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.05);
 }
+
+.nav-item .active {
+    background-color: var(--color2) !important;
+    color: black !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+.nav-item .active:hover {
+    background-color: var(--color1) !important;
+    border-color: var(--color2);
+    color: white !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+.brand-name{
+    color: var(--color2);
+}
 /* partie BG-image + BG-text */ 
 .bg-background {
     width: 100%;
@@ -344,6 +361,44 @@ li {
     width: calc(100% / 3.5);
     margin-bottom: 50px;
 }
+
+/* Postule */ 
+.container-postule{
+    margin-top: 200px;
+}
+.title-dev {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.title-dev h5 {
+    font-weight: 800;
+    color: var(--color1);
+}
+.postuler-div {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.btn-postuler {
+    color: var(--color1);
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 15px;
+    border: 1px solid var(--color2);
+    background-color: var(--color2);
+    text-transform: uppercase;
+    transition: ease 1s;
+    font-weight: 700;
+}
+.btn-postuler:hover {
+    background-color: var(--color1);
+    color: white;
+    border: 1px solid var(--color2);
+    transition: scale(0.9);
+}
 /*footer */ 
 .footer {
     padding: 100px 100px !important;
@@ -368,6 +423,18 @@ li {
 
     .bg-text {
         width: 100%;
+    }
+}
+@media only screen and (max-width: 670px){
+    .row {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+    .container-postule {
+        margin-top: 30px !important;
+    }
+    .fixed-top{
+        position: relative;
     }
 }
 @media only screen and (max-width: 426px){

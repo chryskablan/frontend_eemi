@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Black Lives Matter') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -22,8 +22,9 @@
     <div id="app">
         <!-- nav bar -->
         <nav class="nav nav-pills flex-column flex-sm-row justify-content-center navbar-blm fixed-top">
-            <a class="navbar-brand" href="#">
-                <img src="{{ asset('assets/img/logo-wot-white.png') }}" alt="">
+            <a class="navbar-brand" href="{{ url('/') }}">
+                <h2 class="brand-name">BLM</h2>
+                {{-- <img src="{{ asset('assets/img/logo-wot-white.png') }}" alt=""> --}}
             </a>
             <ul class="nav nav-pills flex-column flex-sm-row justify-content-center">
                 <li class="nav-item">
@@ -57,6 +58,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ route('postule') }}">POSTULER</a>
+                </li>
             </ul>
         </nav>
         <main class="py-4">
@@ -66,8 +71,9 @@
    <footer class="footer container-fluid py-5">
        <div class="row">
            <div class="col-12 col-md">
-                <a class="navbar-brand" href="#">
-                    <img src="{{ asset('assets/img/logo-wot-white.png') }}" alt="">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <h2 class="brand-name">BLM</h2>
+                    {{-- <img src="{{ asset('assets/img/logo-wot-white.png') }}" alt=""> --}}
                 </a>
                <div class="d-flex flex-column">
                     <a href="#"><small>Plan du site</small></a>

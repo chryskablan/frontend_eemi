@@ -26,3 +26,6 @@ Route::get('contact', 'ContactController@index')->name('contact');
 
 //page about 
 Route::get('about', 'AboutController@index')->name('about');
+
+// page fiche de poste 
+Route::get('postule', 'PostulerController@index')->name('postule');
