@@ -42,7 +42,7 @@
         <h2 class="blm-title-section3 mt-5">A propos de BLM</h2>
         <div class="line"></div>
     </div>
-    <div class="container d-flex justify-content-center align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
         <div class="section3-text">
             <p>
                 <strong>#BlackLivesMatter</strong> a été fondée en 2013 en réponse à l'acquittement 
@@ -75,6 +75,14 @@
             <p>
                 <strong>L'appel du Black Live to Matter</strong> est un cri de ralliement pour TOUTES les vies des Noirs en quête de libération.
             </p>
+        </div>
+
+        <div class="button-more">
+            <a href="{{ route('about') }}">
+                <button class="more">
+                    En savoir plus
+                </button>
+            </a>
         </div>
     </div>
 </section>

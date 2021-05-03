@@ -72,46 +72,42 @@
                <div class="d-flex flex-column">
                     <a href="#"><small>Plan du site</small></a>
                     <a href="#"><small>Mentions légales</small></a>
-                    <small>Créé par <a href="#">WEB OF TODAY</a></small>
+                    <small>Créé par <a href="https://weboftoday.fr">WEB OF TODAY</a></small>
                     <small class="d-block mb-3 text-muted">© 2020-2022</small>
                </div>
            </div>
            <div class="col-6 col-md">
-               <h5>ressources</h5>
-               <ul class="list-unstyled text-small">
-                   <li><a class="text-muted" href="#">Cool stuff</a></li>
-                   <li><a class="text-muted" href="#">Random feature</a></li>
-                   <li><a class="text-muted" href="#">Team feature</a></li>
-                   <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                   <li><a class="text-muted" href="#">Another one</a></li>
-                   <li><a class="text-muted" href="#">Last time</a></li>
-               </ul>
-           </div>
-           <div class="col-6 col-md">
-               <h5>features</h5>
-               <ul class="list-unstyled text-small">
-                   <li><a class="text-muted" href="#">Resource</a></li>
-                   <li><a class="text-muted" href="#">Resource name</a></li>
-                   <li><a class="text-muted" href="#">Another resource</a></li>
-                   <li><a class="text-muted" href="#">Final resource</a></li>
-               </ul>
-           </div>
-           <div class="col-6 col-md">
                <h5>Menu</h5>
                <ul class="list-unstyled text-small">
-                   <li><a class="text-muted" href="#">Business</a></li>
-                   <li><a class="text-muted" href="#">Education</a></li>
-                   <li><a class="text-muted" href="#">Government</a></li>
-                   <li><a class="text-muted" href="#">Gaming</a></li>
+                   <li><a class="text-muted" href="#">Accueil</a></li>
+                   <li><a class="text-muted" href="#">Connexion</a></li>
+                   <li><a class="text-muted" href="#">Inscription</a></li>
+                   <li><a class="text-muted" href="{{ route('about') }}">A Propos</a></li>
                </ul>
            </div>
            <div class="col-6 col-md">
-               <h5>about</h5>
+               <h5>Black lives matter</h5>
                <ul class="list-unstyled text-small">
-                   <li><a class="text-muted" href="#">Team</a></li>
-                   <li><a class="text-muted" href="#">Locations</a></li>
-                   <li><a class="text-muted" href="#">Privacy</a></li>
-                   <li><a class="text-muted" href="#">Terms</a></li>
+                   <li><a class="text-muted" href="#">Article 1</a></li>
+                   <li><a class="text-muted" href="#">Article 2</a></li>
+                   <li><a class="text-muted" href="#">Article 3</a></li>
+               </ul>
+           </div>
+           <div class="col-6 col-md">
+               <h5>Évenemment</h5>
+               <ul class="list-unstyled text-small">
+                   <li><a class="text-muted" href="#">Event 1</a></li>
+                   <li><a class="text-muted" href="#">Event 2</a></li>
+                   <li><a class="text-muted" href="#">Event 3</a></li>
+               </ul>
+           </div>
+           <div class="col-6 col-md">
+               <h5>Histoire</h5>
+               <ul class="list-unstyled text-small">
+                   <li><a class="text-muted" href="#">Histoire 1</a></li>
+                   <li><a class="text-muted" href="#">Histoire 2</a></li>
+                   <li><a class="text-muted" href="#">Histoire 3</a></li>
+                   <li><a class="text-muted" href="#">Histoire 4</a></li>
                </ul>
            </div>
        </div>

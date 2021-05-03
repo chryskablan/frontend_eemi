@@ -23,3 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // page de contact 
 Route::get('contact', 'ContactController@index')->name('contact'); 
+
+//page about 
+Route::get('about', 'AboutController@index')->name('about');
